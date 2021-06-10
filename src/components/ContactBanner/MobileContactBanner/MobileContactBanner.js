@@ -5,7 +5,7 @@ import { MobileContactUs } from "../ContactUs/MobileContactUs";
 import "emoji-mart/css/emoji-mart.css";
 import Emoji from "react-emoji-render";
 
-const NatureWalk = require("../../Logos/mascot.png");
+const NatureWalk = require("../../Logos/YGPMascot.png");
 
 function MobileLandingBanner() {
   return (

@@ -5,7 +5,7 @@ import "emoji-mart/css/emoji-mart.css";
 import Emoji from "react-emoji-render";
 import { ContactUs } from "../ContactUs/ContactUs";
 
-const NatureWalk = require("../../Logos/mascot.png");
+const NatureWalk = require("../../Logos/YGPMascot2.png");
 
 function DesktopContactBanner() {
   return (
@@ -62,7 +62,13 @@ const ImageDiv = styled.div`
 
 const LandingImage = styled.img`
   width: 100%;
-  height: 50vh;
+  align-self: center;
+  vertical-align: center;
+  align-content: center;
+  text-align: center;
+  margin-top: -160px;
+  margin-left: -260px;
+  /* height: 50vh; */
 `;
 
 export default DesktopContactBanner;
