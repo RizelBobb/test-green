@@ -24,7 +24,7 @@ function LandingBanner() {
     <div>
       <CSSReset />
 
-      {isMobile ? <div>mainfester </div> : <DesktopFooter />}
+      {isMobile ? <div></div> : <DesktopFooter />}
     </div>
   );
 }
