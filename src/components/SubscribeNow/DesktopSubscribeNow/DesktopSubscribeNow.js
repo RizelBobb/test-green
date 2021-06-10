@@ -53,7 +53,7 @@ function DesktopRequiredLabel() {
           {/* <StyledButton type="submit" label="Get Notified" primary /> */}
           <SpringBig link={"https://enrollnow.vip/login/3610"} />
           <Anchor href="https://netacare.org">
-            <OrderFromNetaBtn type="button" label="Order from Neta" primary />
+            <OrderFromNetaBtn type="button" label="Order from NETA" primary />
           </Anchor>
         </Form>
       </Box>
