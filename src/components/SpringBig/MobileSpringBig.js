@@ -1,8 +1,8 @@
+import "./MobileSpringBig.css";
 import React, { useState } from "react";
 import { Button } from "grommet";
 import { HOSTNAME } from "../environment";
 import Modal from "react-modal";
-import "./MobileSpringBig.css";
 import styled from "styled-components";
 Modal.setAppElement("#root");
 
@@ -41,7 +41,7 @@ export default function MobileSpringBIg({ link }) {
           isOpen={show}
           onRequestClose={toggleModal}
           contentLabel="My dialog"
-          className="secondmodal"
+          className="thirdmodal"
         >
           {/* <StyledHeader2>hello</StyledHeader2> */}
           <iframe

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-.secondmodal {
+.thirdmodal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -19,7 +19,7 @@
   outline: none;
   overflow: scroll;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* .ageVerifyBtn {
