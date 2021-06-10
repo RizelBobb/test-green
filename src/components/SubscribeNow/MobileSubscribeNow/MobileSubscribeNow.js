@@ -46,7 +46,7 @@ export const MobileRequiredLabel = () => (
             id="phone"
             name="phone"
             type="tel"
-            placeholder="Enter your phone number here"
+            placeholder="Enter phone number here"
           />
         </FormField>
         <MobileSpringBig link={"https://enrollnow.vip/login/3610"} />
