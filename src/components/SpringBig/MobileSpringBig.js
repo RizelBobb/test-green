@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "grommet";
 import { HOSTNAME } from "../environment";
 import Modal from "react-modal";
-import "./SpringBig.css";
+import "./MobileSpringBig.css";
 import styled from "styled-components";
 Modal.setAppElement("#root");
 
@@ -12,8 +12,7 @@ const StyledButton = styled(Button)`
   height: 2.5em;
   font-size: 0.9em;
   margin-right: 20px;
-  width: 90%;
-  overflow: scroll;
+  width: 80%;
 `;
 export default function MobileSpringBIg({ link }) {
   const [show, setShow] = useState(false);
@@ -48,7 +47,7 @@ export default function MobileSpringBIg({ link }) {
           <iframe
             className="iframe_cover"
             src={link}
-            style={{ width: "80%", height: "200px" }}
+            style={{ width: "90%", height: "200px" }}
             title="springbig"
           />
         </Modal>
