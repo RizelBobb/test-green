@@ -12,7 +12,8 @@ const StyledButton = styled(Button)`
   height: 2.5em;
   font-size: 0.9em;
   margin-right: 20px;
-  width: 80%;
+  width: 90%;
+  overflow: scroll;
 `;
 export default function MobileSpringBIg({ link }) {
   const [show, setShow] = useState(false);
