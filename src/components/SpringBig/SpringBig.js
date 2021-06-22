@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "grommet";
+import axios from "axios";
+// import fetch from "node-fetch"
 import { HOSTNAME } from "../environment";
 import Modal from "react-modal";
 import "./SpringBig.css";
@@ -17,6 +19,38 @@ export default function SpringBig({ link }) {
   const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
+  async function handleSubmit(event) {
+     event.preventDefault();
+    const data = {
+        "member": {
+          "pos_user": "234353",
+          "pos_type": "greenpackage",
+          "phone_number": "5133555113",
+          "first_name": "TestGirl",
+          "last_name": "Rizel"
+        }
+      }
+    const options ={
+      method: 'POST', 
+      // url: 'https://api.springbig.technology/staging/pos/v1/members',
+      body: data, 
+      headers: {
+        'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+        'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Methods': 'GET, POST'
+      }
+}
+    try {
+      const resp = await fetch('https://api.springbig.technology/staging/pos/v1/members', options);
+      console.log(resp)
+      return resp
+    } catch(err) {
+     return err
+    }
+  }
+  
   function toggleModal() {
     setShow(!show);
   }
@@ -31,7 +65,7 @@ export default function SpringBig({ link }) {
     return (
       <>
         <StyledButton
-          onClick={toggleModal}
+          onClick={handleSubmit}
           type="submit"
           label="Become a VIP"
           primary
