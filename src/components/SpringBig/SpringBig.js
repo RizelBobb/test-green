@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "grommet";
 // import axios from "axios";
 // import superagent  from "superagent";
@@ -22,15 +22,15 @@ export default function SpringBig({ link }) {
   // const handleShow = () => setShow(true);
   async function handleSubmit(event) {
      event.preventDefault();
-    const data = {
-        "member": {
-          "pos_user": "234353",
-          "pos_type": "greenpackage",
-          "phone_number": "5133555113",
-          "first_name": "TestGirl",
-          "last_name": "Rizel"
-        }
-      }
+    // const data = {
+    //     "member": {
+    //       "pos_user": "234353",
+    //       "pos_type": "greenpackage",
+    //       "phone_number": "5133555113",
+    //       "first_name": "TestGirl",
+    //       "last_name": "Rizel"
+    //     }
+    //   }
 //     const options ={
 //       method: 'POST', 
 //       // url: 'https://api.springbig.technology/staging/pos/v1/members',
