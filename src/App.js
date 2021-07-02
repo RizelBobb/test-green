@@ -3,7 +3,7 @@ import ContactBanner from "./components/ContactBanner/ContactBanner";
 import LandingBanner from "./components/LandingBanner/LandingBanner";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Footer from "./components/Footer/Footer";
-import VerifyAgeModal from "./components/VerifyAgeModal/VerifyAgeModal";
+// import VerifyAgeModal from "./components/VerifyAgeModal/VerifyAgeModal";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <LandingBanner />
       <ContactBanner />
       <Footer />
-      <VerifyAgeModal />
+      {/* <VerifyAgeModal /> */}
     </div>
   );
 }
