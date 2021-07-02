@@ -31,18 +31,18 @@ export default function SpringBig({ link }) {
           "last_name": "Rizel"
         }
       }
-    // const options ={
-    //   method: 'POST', 
-    //   // url: 'https://api.springbig.technology/staging/pos/v1/members',
-    //   data: data, 
-    //   headers: {
-    //     'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
-    //     'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
-    //     // 'Access-Control-Allow-Origin': '*',
-    //     // 'Content-Type': 'application/json',
-    //     // 'Access-Control-Allow-Methods': 'GET, POST'
-    //   }
-}
+//     const options ={
+//       method: 'POST', 
+//       // url: 'https://api.springbig.technology/staging/pos/v1/members',
+//       data: data, 
+//       headers: {
+//         'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+//         'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+//         // 'Access-Control-Allow-Origin': '*',
+//         // 'Content-Type': 'application/json',
+//         // 'Access-Control-Allow-Methods': 'GET, POST'
+//       }
+// }
     try {
 
       // superagent
