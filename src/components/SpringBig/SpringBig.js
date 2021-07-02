@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "grommet";
-// import axios from "axios";
+import axios from "axios";
 // import superagent  from "superagent";
 // import fetch from "node-fetch"
 // import { HOSTNAME } from "../environment";
@@ -22,27 +22,27 @@ export default function SpringBig({ link }) {
   // const handleShow = () => setShow(true);
   async function handleSubmit(event) {
      event.preventDefault();
-    // const data = {
-    //     "member": {
-    //       "pos_user": "234353",
-    //       "pos_type": "greenpackage",
-    //       "phone_number": "5133555113",
-    //       "first_name": "TestGirl",
-    //       "last_name": "Rizel"
-    //     }
-    //   }
-//     const options ={
-//       method: 'POST', 
-//       // url: 'https://api.springbig.technology/staging/pos/v1/members',
-//       data: data, 
-//       headers: {
-//         'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
-//         'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
-//         // 'Access-Control-Allow-Origin': '*',
-//         // 'Content-Type': 'application/json',
-//         // 'Access-Control-Allow-Methods': 'GET, POST'
-//       }
-// }
+    const data = {
+        "member": {
+          "pos_user": "234353",
+          "pos_type": "greenpackage",
+          "phone_number": "5133555113",
+          "first_name": "TestGirl",
+          "last_name": "Rizel"
+        }
+      }
+    const options ={
+      method: 'POST', 
+      // url: 'https://api.springbig.technology/staging/pos/v1/members',
+      data: data, 
+      headers: {
+        'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+        'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+        // 'Access-Control-Allow-Origin': '*',
+        // 'Content-Type': 'application/json',
+        // 'Access-Control-Allow-Methods': 'GET, POST'
+      }
+}
     try {
 
       // superagent
@@ -54,8 +54,8 @@ export default function SpringBig({ link }) {
       // .end(function (err, res) {
       //   console.log(err)
       // });
-      // const resp = await axios('https://api.springbig.technology/staging/pos/v1/members', options);
-      // console.log(resp)
+      const resp = await axios('https://api.springbig.technology/staging/pos/v1/members', options);
+      console.log(resp)
       console.log('helllooooo')
       // return resp
     } catch(err) {
