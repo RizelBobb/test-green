@@ -1,11 +1,11 @@
 import {
   Box,
-  Button,
+  // Button,
   Form,
   FormField,
   Grommet,
   TextInput,
-  Anchor,
+  // Anchor,
 } from "grommet";
 import styled from "styled-components";
 import { grommet } from "grommet/themes";
@@ -21,12 +21,12 @@ const customTheme = deepMerge(grommet, {
   },
 });
 
-const OrderFromNetaBtn = styled(Button)`
-  background: #7fb74f;
-  border: 1px solid #7fb74f;
-  height: 2.5em;
-  font-size: 0.9em;
-`;
+// const OrderFromNetaBtn = styled(Button)`
+//   background: #7fb74f;
+//   border: 1px solid #7fb74f;
+//   height: 2.5em;
+//   font-size: 0.9em;
+// `;
 
 const StyledTextInput = styled(TextInput)`
   width: 50%;
@@ -39,7 +39,7 @@ const contentProps = {
 function DesktopRequiredLabel() {
   return (
     <Grommet theme={customTheme}>
-      <Box background="#f5fffa" pad={{ bottom: "large", top: "xsmall" }}>
+      <Box display="flex" background="#f5fffa" pad={{ bottom: "large", top: "xsmall" }}>
         <Form direction="row">
           <FormField contentProps={contentProps} name="phone" htmlFor="phone">
             <StyledTextInput
@@ -51,10 +51,10 @@ function DesktopRequiredLabel() {
             />
           </FormField>
           {/* <StyledButton type="submit" label="Get Notified" primary /> */}
-          <SpringBig link={"https://enrollnow.vip/login/3610"} />
-          <Anchor href="https://netacare.org">
+          <SpringBig width="100%" link={"https://enrollnow.vip/login/3610"} />
+          {/* <Anchor href="https://netacare.org">
             <OrderFromNetaBtn type="button" label="Order from NETA" primary />
-          </Anchor>
+          </Anchor> */}
         </Form>
       </Box>
     </Grommet>

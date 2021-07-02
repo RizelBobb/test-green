@@ -1,11 +1,11 @@
 import {
   Box,
-  Button,
+  // Button,
   Form,
   FormField,
   Grommet,
   TextInput,
-  Anchor,
+  // Anchor,
 } from "grommet";
 import styled from "styled-components";
 import { grommet } from "grommet/themes";
@@ -19,14 +19,14 @@ const customTheme = deepMerge(grommet, {
   },
 });
 
-const OrderFromNetaBtn = styled(Button)`
-  background: #7fb74f;
-  border: 1px solid #7fb74f;
-  height: 2.5em;
-  font-size: 0.9em;
-  width: 80%;
-  margin-top: 10px;
-`;
+// const OrderFromNetaBtn = styled(Button)`
+//   background: #7fb74f;
+//   border: 1px solid #7fb74f;
+//   height: 2.5em;
+//   font-size: 0.9em;
+//   width: 80%;
+//   margin-top: 10px;
+// `;
 
 const StyledTextInput = styled(TextInput)`
   width: 80%;
@@ -50,9 +50,9 @@ export const MobileRequiredLabel = () => (
           />
         </FormField>
         <MobileSpringBig link={"https://enrollnow.vip/login/3610"} />
-        <Anchor href="https://netacare.org">
+        {/* <Anchor href="https://netacare.org">
           <OrderFromNetaBtn type="button" label="Order from NETA" primary />
-        </Anchor>
+        </Anchor> */}
       </Form>
     </Box>
   </Grommet>
