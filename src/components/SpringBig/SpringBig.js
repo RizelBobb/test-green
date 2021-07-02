@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "grommet";
-import axios from "axios";
+// import axios from "axios";
 // import superagent  from "superagent";
 // import fetch from "node-fetch"
 // import { HOSTNAME } from "../environment";
@@ -17,7 +17,7 @@ const StyledButton = styled(Button)`
   margin-right: 20px;
 `;
 export default function SpringBig({ link }) {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
   async function handleSubmit(event) {
@@ -31,17 +31,17 @@ export default function SpringBig({ link }) {
           "last_name": "Rizel"
         }
       }
-    const options ={
-      method: 'POST', 
-      // url: 'https://api.springbig.technology/staging/pos/v1/members',
-      data: data, 
-      headers: {
-        'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
-        'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
-        // 'Access-Control-Allow-Origin': '*',
-        // 'Content-Type': 'application/json',
-        // 'Access-Control-Allow-Methods': 'GET, POST'
-      }
+    // const options ={
+    //   method: 'POST', 
+    //   // url: 'https://api.springbig.technology/staging/pos/v1/members',
+    //   data: data, 
+    //   headers: {
+    //     'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+    //     'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+    //     // 'Access-Control-Allow-Origin': '*',
+    //     // 'Content-Type': 'application/json',
+    //     // 'Access-Control-Allow-Methods': 'GET, POST'
+    //   }
 }
     try {
 
