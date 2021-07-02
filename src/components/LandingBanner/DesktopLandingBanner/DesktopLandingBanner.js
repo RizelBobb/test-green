@@ -28,7 +28,7 @@ function DesktopLandingBanner() {
           <StyledCheckCircle size={16} />
           {"  "}Cannabis Delivery Service <Emoji text=":truck: :leaves:" />
         </StyledHeader2>
-        <StyledText>Join our rewards program.</StyledText>
+        <StyledText>Join our texting list.</StyledText>
         <SubscribeNow />
         <DesktopSocialMediaIconRow />
       </ComingSoonDiv>
