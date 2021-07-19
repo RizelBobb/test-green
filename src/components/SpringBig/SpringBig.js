@@ -54,9 +54,11 @@ export default function SpringBig({ link }) {
       // .end(function (err, res) {
       //   console.log(err)
       // });
-      const resp = await axios('https://api.springbig.technology/staging/pos/v1/members', options);
-      console.log(resp)
       console.log('helllooooo')
+      // remove cors-anywhere when pushing to prod
+      const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/staging/pos/v1/members', options);
+      console.log(resp)
+      console.log('goodbye')
       // return resp
     } catch(err) {
      return err
