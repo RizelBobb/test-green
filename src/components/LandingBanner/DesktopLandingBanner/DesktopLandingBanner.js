@@ -15,7 +15,7 @@ function DesktopLandingBanner() {
     <Container id="home">
       <ComingSoonDiv>
         <StyledHeader1>
-          DELIVERY SERVICES <br></br>ARE LIVE!
+          DELIVERIES<br></br>SERVICES<br></br>ARE LIVE!
         </StyledHeader1>
         <StyledHeader2>
           <StyledCheckCircle size={16} />
