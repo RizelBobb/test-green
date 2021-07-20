@@ -29,19 +29,20 @@ export default function SpringBig({ customerName, phoneNumber }) {
           "phone_number": phoneNumber,
           "first_name": customerName,
         }
-      }
+    }
+    
     const options ={
       method: 'POST', 
       data: data, 
       headers: {
-        'AUTH-TOKEN': '6d594a295f14f4ed838752ee46c7aa3a',
-        'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+        'AUTH-TOKEN': process.env.REACT_APP_AUTH_TOKEN,
+        'X-api-key': process.env.REACT_APP_API_KEY,
       }
 }
     try {
       const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/production/pos/v1/members', options);
-      console.log(resp)
-      console.log(pos_user_id)
+      // console.log(resp)
+      // console.log(pos_user_id)
       if (resp.status === 200) {
          window.location.href = 'http://netacare.org';
       }
