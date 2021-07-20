@@ -1,11 +1,9 @@
 import {
   Box,
-  Button,
   Form,
   FormField,
   Grommet,
   TextInput,
-  Anchor,
 } from "grommet";
 import styled from "styled-components";
 import { grommet } from "grommet/themes";
@@ -21,12 +19,12 @@ const customTheme = deepMerge(grommet, {
   },
 });
 
-const OrderFromNetaBtn = styled(Button)`
-  background: #7fb74f;
-  border: 1px solid #7fb74f;
-  height: 2.5em;
-  font-size: 0.9em;
-`;
+// const OrderFromNetaBtn = styled(Button)`
+//   background: #7fb74f;
+//   border: 1px solid #7fb74f;
+//   height: 2.5em;
+//   font-size: 0.9em;
+// `;
 
 const StyledTextInput = styled(TextInput)`
   width: 50%;

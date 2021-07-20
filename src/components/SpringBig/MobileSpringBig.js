@@ -1,57 +1,58 @@
 import "./MobileSpringBig.css";
-import React, { useState } from "react";
 import { Button } from "grommet";
-import { HOSTNAME } from "../environment";
-import Modal from "react-modal";
+import axios from "axios";
 import styled from "styled-components";
-Modal.setAppElement("#root");
+import { v4 as uuidv4 } from 'uuid';
+// Modal.setAppElement("#root");
+const pos_user_id = uuidv4();
 
 const StyledButton = styled(Button)`
   background: #033fb4;
   border: 1px solid #033fb4;
   height: 2.5em;
   font-size: 0.9em;
-  margin-right: 20px;
+  margin: 20px 20px 20px 0;
   width: 80%;
 `;
-export default function MobileSpringBIg({ link }) {
-  const [show, setShow] = useState(false);
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-  function toggleModal() {
-    setShow(!show);
+export default function MobileSpringBIg({ customerName, phoneNumber }) {
+  async function handleSubmit(event) {
+     event.preventDefault();
+    const data = {
+        "member": {
+          "pos_user": pos_user_id,
+          "pos_type": "greenpackage",
+          "phone_number": phoneNumber,
+          "first_name": customerName,
+        }
+      }
+    const options ={
+      method: 'POST', 
+      data: data, 
+      headers: {
+        'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+        'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
+      }
+}
+    try {
+      const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/staging/pos/v1/members', options);
+      console.log(resp)
+      console.log(pos_user_id)
+      if (resp.status === 200) {
+         window.location.href = 'http://netacare.org';
+      }
+      return resp
+    } catch(err) {
+     return err
+    }
   }
-  const url = new URL(link);
-  if (url.hostname === HOSTNAME) {
-    return (
-      <a target="_blank" href={link} rel="noreferrer">
-        {link}
-      </a>
-    );
-  } else {
     return (
       <>
         <StyledButton
-          onClick={toggleModal}
+          onClick={handleSubmit}
           type="submit"
-          label="Become a VIP"
+          label="Order Now"
           primary
         />
-        <Modal
-          isOpen={show}
-          onRequestClose={toggleModal}
-          contentLabel="My dialog"
-          className="thirdmodal"
-        >
-          {/* <StyledHeader2>hello</StyledHeader2> */}
-          <iframe
-            className="iframe_cover"
-            src={link}
-            style={{ width: "90%", height: "200px" }}
-            title="springbig"
-          />
-        </Modal>
       </>
     );
-  }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createGlobalStyle } from "styled-components";
-import { MobileRequiredLabel } from "./MobileSubscribeNow/MobileSubscribeNow";
+import MobileRequiredLabel  from "./MobileSubscribeNow/MobileSubscribeNow";
 import DesktopRequiredLabel from "./DesktopSubscribeNow/DesktopSubscribeNow";
 
 function SubscribeNow() {
