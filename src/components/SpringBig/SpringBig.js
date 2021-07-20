@@ -34,12 +34,12 @@ export default function SpringBig({ customerName, phoneNumber }) {
       method: 'POST', 
       data: data, 
       headers: {
-        'AUTH-TOKEN': '034b9e2bc45fdb39e00f99ec65f313d3',
+        'AUTH-TOKEN': '6d594a295f14f4ed838752ee46c7aa3a',
         'X-api-key': 'b0bSI5WEa84daARcbYEXFPX0vMgT13R3Y5gPqKN2',
       }
 }
     try {
-      const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/staging/pos/v1/members', options);
+      const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/production/pos/v1/members', options);
       console.log(resp)
       console.log(pos_user_id)
       if (resp.status === 200) {
