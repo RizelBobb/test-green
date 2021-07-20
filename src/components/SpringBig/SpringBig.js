@@ -72,7 +72,7 @@ export default function SpringBig({ link }) {
         <StyledButton
           onClick={toggleModal}
           type="submit"
-          label="Order Now"
+          label="Join Now"
           primary
         />
         <Modal

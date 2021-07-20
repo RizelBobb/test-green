@@ -74,7 +74,7 @@ export default function MobileSpringBIg({ link }) {
         <StyledButton
           onClick={toggleModal}
           type="submit"
-          label="Order Now"
+          label="Join Now"
           primary
         />
         <Modal

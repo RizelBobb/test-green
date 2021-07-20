@@ -14,7 +14,7 @@ function MobileLandingBanner() {
     <Container id="home">
       <ComingSoonDiv>
         <StyledHeader1>
-          DELIVERIES SERVICES<br></br>ARE LIVE!
+          WE ARE <br></br>COMING SOON!
         </StyledHeader1>
         <StyledHeader2>
           <StyledCheckCircle size={16} />
