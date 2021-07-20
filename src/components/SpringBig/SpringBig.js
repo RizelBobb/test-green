@@ -40,7 +40,7 @@ export default function SpringBig({ customerName, phoneNumber }) {
       }
 }
     try {
-      const resp = await axios('https://cors-anywhere.herokuapp.com/https://api.springbig.technology/production/pos/v1/members', options);
+      const resp = await axios('https://api.springbig.technology/production/pos/v1/members', options);
       // console.log(resp)
       // console.log(pos_user_id)
       if (resp.status === 200) {
