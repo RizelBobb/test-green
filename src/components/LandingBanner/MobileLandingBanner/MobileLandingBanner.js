@@ -27,7 +27,7 @@ function MobileLandingBanner() {
           <StyledCheckCircle size={16} />
           {"  "}Cannabis Delivery Service <Emoji text=":truck: :leaves:" />
         </StyledHeader2>
-        <StyledText>Get notified when we launch.</StyledText>
+        <StyledText>Join our texting list.</StyledText>
         <SubscribeNow />
         <MobileSocialMediaIconRow />
       </ComingSoonDiv>
