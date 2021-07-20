@@ -16,6 +16,7 @@ const StyledButton = styled(Button)`
   height: 2.5em;
   font-size: 0.9em;
   margin-right: 20px;
+  width: 50%;
 `;
 
 export default function SpringBig({ customerName, phoneNumber }) {
@@ -54,7 +55,7 @@ export default function SpringBig({ customerName, phoneNumber }) {
         <StyledButton
           onClick={handleSubmit}
           type="submit"
-          label="Order"
+          label="Order Now"
           primary
         />
       </>
