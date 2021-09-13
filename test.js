@@ -1,4 +1,4 @@
-const hello = 5
-const goodbye = 7
+const hello = 3
+const goodbye = 6
 
-hello > goodbye ? 'yep' : 'nope'
+hello > goodbye ? 'yes' : 'no'
