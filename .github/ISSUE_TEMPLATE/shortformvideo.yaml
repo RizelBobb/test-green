@@ -1,55 +1,58 @@
-name: Request a Short Form Video
-description: Request a short form video for a GitHub feature
-title: "[Short Form Video Request] <title>"
-labels: []
+name: Short Form Video Request
+description: Request a short form video about a feature
+title: "[Request For Short Form Video] <title>"
+labels: [Short Form Video]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this short form video request!
-  - type: input
-    id: feature-name
-    attributes:
-      label: Feature Name
-      description: Which feature is the video covering?
-      placeholder: ex. codespaces
-    validations:
+- type: input
+  attributes:
+    label: Feature Name
+    description: Which feature is this video covering?
+    placeholder: ex. codespaces
       required: true
-  - type: textarea
-    id: product-owner
-    attributes:
-      label: Product Owner
-      description: Who is the product owner?
-      placeholder: Insert the @handle of the owner here
-    validations:
-      required: true
-  - type: dropdown
-    id: posting-location
-    attributes:
-      label: 
-      description: Where should the video be posted?
-      multiple: true
-      options:
-        - Youtube
-        - Linkedin
-        - Twitter
-        - TikTok
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: more-info
-    attributes:
-      label: More Information
-      description: If there is anything you would like to share with us, please share below
-      placeholder: you rock!
-      required: false
+- type: textarea
+  attributes:
+    label: Product Owner
+    description: Who is the product owner of this feature?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. In this environment...
+      2. With this config...
+      3. Run '...'
+      4. See error...
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
