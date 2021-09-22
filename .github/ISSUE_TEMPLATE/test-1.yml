@@ -1,0 +1,62 @@
+name: Short Form Video Request
+description: Request a Short Form Video About a Video About a Feature
+title: "[Short Form Video Request]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this short form video request!
+  - type: input
+    id: feature-name
+    attributes:
+      label: Feature Name
+      description: Which feature is the video covering?
+      placeholder: ex. codespaces
+    validations:
+      required: true
+  - type: textarea
+    id: product-owner
+    attributes:
+      label: Product Owner
+      description: Who is the product owner?
+      placeholder: Insert the @handle of the owner here
+    validations:
+      required: true
+  - type: dropdown
+    id: posting-location
+    attributes:
+      label: 
+      description: Where should the video be posted?
+      multiple: true
+      options:
+        - Youtube
+        - Linkedin
+        - Twitter
+        - TikTok
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: more-info
+    attributes:
+      label: More Information
+      description: If there is anything you would like to share with us, please share below
+      placeholder: you rock!
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
