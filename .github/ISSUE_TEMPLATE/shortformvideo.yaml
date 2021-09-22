@@ -22,10 +22,10 @@ body:
     label: Platform
     description: Where should this video be posted?
     multiple: true
-      options:
-        - Youtube
-        - Linkedin
-        - Twitter
-        - TikTok
+    options:
+      - Youtube
+      - Linkedin
+      - Twitter
+      - TikTok
   validations:
     required: true
