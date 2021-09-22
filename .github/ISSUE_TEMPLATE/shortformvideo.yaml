@@ -7,6 +7,7 @@ body:
   attributes:
     label: Feature Name
     description: Which feature is this video for?
+    placeholder: ex. Codespaces
   validations:
     required: true
 - type: textarea
