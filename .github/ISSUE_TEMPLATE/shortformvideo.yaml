@@ -27,5 +27,13 @@ body:
       - Linkedin
       - Twitter
       - TikTok
+      - Other
   validations:
     required: true
+- type: textarea
+  attributes:
+    label: More Information
+    description: If you would like to add any more information, please add it below
+    placeholder: You rock!
+  validations:
+    required: false
