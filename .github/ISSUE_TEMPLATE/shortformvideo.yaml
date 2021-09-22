@@ -32,6 +32,12 @@ body:
     required: true
 - type: textarea
   attributes:
+    label: Audience
+    description: Who is the intended audience?
+  validations:
+    required: true
+- type: textarea
+  attributes:
     label: Business Value
     description: How will this drive business goals?
   validations:
