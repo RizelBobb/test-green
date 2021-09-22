@@ -3,12 +3,6 @@ description: Request a short form video about a feature
 title: "[Request For Short Form Video] <title>"
 labels: [Short Form Video]
 body:
-- type: input
-  attributes:
-    label: Feature Name
-    description: Which feature is this video covering?
-    placeholder: ex. codespaces
-      required: true
 - type: textarea
   attributes:
     label: Product Owner
