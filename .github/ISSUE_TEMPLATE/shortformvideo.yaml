@@ -12,8 +12,8 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: Product Owner
-    description: Who is the product owner of this feature?
+    label: Content or Product Stakeholder(s)
+    description: Who can we follow up with for a review?
     placeholder: ex. @handle
   validations:
     required: true
@@ -30,7 +30,7 @@ body:
       - Other
   validations:
     required: true
-- type: textarea
+ - type: textarea
   attributes:
     label: Audience
     description: Who is the intended audience?
@@ -38,8 +38,8 @@ body:
     required: true
 - type: textarea
   attributes:
-    label: Business Goals
-    description: How will this video drive business goals ?
+    label: Business Value
+    description: How will this drive business goals?
   validations:
     required: true
 - type: textarea
