@@ -1,7 +1,7 @@
 name: Request a Short Form Video
 description: Request a short form video for a GitHub feature
 title: "[Short Form Video Request] <title>"
-labels: 
+labels: []
 body:
   - type: markdown
     attributes:
