@@ -20,7 +20,7 @@ body:
 - type: dropdown
   attributes:
     label: Platform
-    description: Where should this video be posted?
+    description: Where should this video be posted? (You can choose multiple platforms, if needed)
     multiple: true
     options:
       - Youtube
