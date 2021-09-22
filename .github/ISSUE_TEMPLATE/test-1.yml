@@ -2,6 +2,7 @@ name: Short Form Video Request
 description: Request a Short Form Video About a Video About a Feature
 title: "[Short Form Video Request]: "
 body:
+  label: test
   - type: markdown
     attributes:
       value: |
